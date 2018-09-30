@@ -1,7 +1,6 @@
 {
   "name": "perf",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "artillery": "artillery",
@@ -13,5 +12,7 @@
   "dependencies": {
     "artillery": "^1.6.0-15",
     "artillery-plugin-statsd": "^2.2.0"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }
