@@ -1,0 +1,23 @@
+{
+  "name": "arqui-soft-2018-2c-tp1-grupo_jfd",
+  "version": "1.0.0",
+  "description": "> **La fecha de entrega para el informe y el código es el jueves 11/10** :bangbang:",
+  "main": "statsd.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diego-wl/arqui-soft-2018-2C-tp1-grupo_jfd.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diego-wl/arqui-soft-2018-2C-tp1-grupo_jfd/issues"
+  },
+  "homepage": "https://github.com/diego-wl/arqui-soft-2018-2C-tp1-grupo_jfd#readme",
+  "dependencies": {
+    "artillery": "^1.6.0-24",
+    "artillery-plugin-statsd": "^2.2.1"
+  }
+}
