@@ -55,6 +55,31 @@ services:
             - "/sys:/sys:ro"
             - "/var/lib/docker/:/var/lib/docker:ro"
 
+    gunicorn_1:
+      build: ./py/
+      ports:
+       - "8001:8000"
+    gunicorn_2:
+      build: ./py/
+      ports:
+       - "8002:8000"
+    gunicorn_3:
+      build: ./py/
+      ports:
+       - "8003:8000"
+    node_1:
+      build: ./js/
+      ports:
+       - "3001:3000"
+    node_2:
+      build: ./js/
+      ports:
+       - "3002:3000"
+    node_3:
+      build: ./js/
+      ports:
+       - "3003:3000"
+
 volumes:
     grafana_config:
         driver: local
