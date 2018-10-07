@@ -67,6 +67,18 @@ services:
       build: ./py/
       ports:
        - "8003:8000"
+    gunicorn_4:
+      build: ./py/
+      ports:
+       - "8004:8000"
+    gunicorn_5:
+      build: ./py/
+      ports:
+       - "8005:8000"
+    gunicorn_6:
+      build: ./py/
+      ports:
+       - "8006:8000"       
     node_1:
       build: ./js/
       ports:
