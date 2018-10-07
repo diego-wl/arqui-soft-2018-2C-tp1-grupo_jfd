@@ -32,7 +32,7 @@ config:
       arrivalRate: 600      
             
 scenarios:
-  - name: Root (/)
+  - name: Delay (/delay)
     flow:
       - get:
-          url: '/'
+          url: '/delay'
