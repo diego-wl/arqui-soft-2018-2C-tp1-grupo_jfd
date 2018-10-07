@@ -8,7 +8,7 @@ config:
           port: 8125
           prefix: "artillery-node"
     gunicorn:
-      target: 'http://localhost:5555/gunicorn/'
+      target: 'http://localhost:5555/gunicorn'
       plugins:
         statsd:
           host: localhost
@@ -18,12 +18,21 @@ config:
   pool: 50 # All HTTP requests from all virtual users will be sent over the same connections
 
   phases:
-    - name: Plain
-      duration: 120
-      arrivalRate: 30
+    - name: Simple
+      duration: 60
+      arrivalRate: 50
+    - name: Medium
+      duration: 60
+      arrivalRate: 150
+    - name: Heavy
+      duration: 60
+      arrivalRate: 300
+    - name: SuperHeavy
+      duration: 60
+      arrivalRate: 600      
 
 scenarios:
-  - name: Pi (/pi)
+  - name: Calc (/calc)
     flow:
       - get:
-          url: '/pi'
+          url: '/calc'
