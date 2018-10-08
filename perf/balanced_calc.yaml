@@ -32,7 +32,7 @@ config:
       arrivalRate: 600 
 
 scenarios:
-  - name: MultipleScenario (/balanced)
+  - name: MultipleScenario Calc
     flow:
       - get:
-          url: '/balanced/delay'
+          url: '/balanced/calc'

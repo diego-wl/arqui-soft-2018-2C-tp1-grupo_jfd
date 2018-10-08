@@ -91,7 +91,18 @@ services:
       build: ./js/
       ports:
        - "3003:3000"
-
+    node_4:
+      build: ./js/
+      ports:
+       - "3004:3000"
+    node_5:
+      build: ./js/
+      ports:
+       - "3005:3000"
+    node_6:
+      build: ./js/
+      ports:
+       - "3006:3000"
 volumes:
     grafana_config:
         driver: local
